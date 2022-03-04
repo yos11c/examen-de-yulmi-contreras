@@ -89,5 +89,18 @@ void getFactorial(){
    cout<<"el factorial es: " <<fact;
    system("pause");
 }
+void getTablaMulti(){
+	int numero;
+	do{
+		cout<<"INGRESE UN NUMERO: ";
+		cin>>numero;
+		
+	}while((numero<1) || (numero>1000));
+	
+	for(int i=1; i<=10; i++){
+		cout<<numero<<" * "<<i<<" = "<<numero * i<<endl;
+	}
+	system("pause");
+}
 
 
