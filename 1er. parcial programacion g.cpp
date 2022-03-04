@@ -103,4 +103,36 @@ void getTablaMulti(){
 	system("pause");
 }
 
+void getParesSP(){
+float csumin;
+	float csumpar;
+	int n;
+	float s;
+	float suma;
+	float sumar;
+	cout << "bienvenidos" << endl;
+	cout << "determine cuantos de sus numeros son pares" << endl;
+	sumar = 0;
+	suma = 0;
+	csumin = 0;
+	csumpar = 0;
+	for (s=1;s<=10;s++) {
+		cout << "ingrese numero " << s << "" << endl;
+		cin >> n;
+		if (n%2==0) {
+			csumpar = csumpar+1;
+			sumar = sumar+n;
+		} else {
+			csumin = csumin+1;
+			suma = suma+n;
+		}
+	}
+	cout << "sus numeros pares son:" << csumpar << endl;
+	cout << "la suma de los numeros pares es:" << sumar << endl;
+	cout << "sus numeros impares son:" << csumin << endl;
+	cout << "la suma de los numeros impares es:" << suma << endl;
+	cout << "el promedio de los numeros impares es:" << suma/10 << endl;
+	
+
+}
 
