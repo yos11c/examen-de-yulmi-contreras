@@ -136,3 +136,34 @@ float csumin;
 
 }
 
+void getDiaLaboralN(){
+	int dia;
+
+    printf( "\n   Introduzca d%ca de la semana: ", 161 );
+    scanf( "%d", &dia );
+
+    if ( dia >= 1 && dia <= 7 )
+
+        switch ( dia )
+        {
+            case 1 : printf( "\n   Lunes es dia laboral" );
+                     break;
+            case 2 : printf( "\n   Martes es dia laboral" );
+                     break;
+            case 3 : printf( "\n   Mierccoles es dia laboral", 130 );
+                     break;
+            case 4 : printf( "\n   Jueves es dia laboral" );
+                     break;
+            case 5 : printf( "\n   Viernes es dia laboral" );
+                     break;
+            case 6 : printf( "\n   S%cbado es dia laboral", 160 );
+                     break;
+            case 7 : printf( "\n   Domingo no es dia laboral " );
+        }
+ 
+
+    else
+        printf( "\n   ERROR: Dia incorrecto.", 161 );
+}
+
+
