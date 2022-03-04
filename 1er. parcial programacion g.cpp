@@ -166,4 +166,22 @@ void getDiaLaboralN(){
         printf( "\n   ERROR: Dia incorrecto.", 161 );
 }
 
+void getContrasena(){
+float cl;
+	float cont;
+	cont = 0;
+	do {
+		cout << "" << endl;
+		cout << "Ingresar clave :" << endl;
+		cout << "" << endl;
+		cin >> cl;
+		if (cl==123456) {
+			cout << "La clave es correcta " << endl;
+			// cont=cont-1
+		} else {
+			cout << "la clave es incorrecta en su intento  " << cont+1 << endl;
+			cont = cont+1;
+		}
+	} while (!(cont==3 || cont<1));
+}
 
